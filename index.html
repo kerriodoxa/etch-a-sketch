@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">Sketchbook</h1>
+        <div class="sketchBook"></div>
+        <div class="commands">
+            <div class="color-box">
+                <input id="color" type="color" name="color">
+                <label for="color">Pen color</label>
+            </div>
+            <div class="grid-box">
+                <input id="grid" type="number" min="16" max="150" placeholder="16-250" name="grid">
+                <label for="grid">Set grid (E.g.: 25 makes it 25x25)</label>
+            </div>
+            <div class="btn">
+                <input id="btn-reset" type="button" name="reset" value="RESET">
+                <label for="btn-reset">Reset sketch</label>
+            </div>
+        </div>
+    </div>
+   
+    <script src="index.js"></script>
+</body>
+</html>
