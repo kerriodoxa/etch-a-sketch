@@ -32,16 +32,6 @@ body {
     font-size: 38px;
 }
 
-
-.sketchBook {
-    margin: 20px 0;
-    width: 900px;
-    height: 700px;
-    background-color: white;
-    border: none;
-    border-radius: 3px;
-    box-shadow: 5px -5px 20px grey;
-}
 .commands {
     height: 100px;
     width: 90%;
@@ -59,42 +49,45 @@ body {
     padding: 5px;
 }
 
-.color-box > input {
+.color-box > #color {
     margin-right: 10px;
 }
 
-.color-box > input:hover {
+.color-box > #color:hover {
     cursor: pointer;
 }
 
-.grid-box > input {
+.grid-box > #grid-btn {
     margin-right: 10px;
-    border: none;
-    height: 30px;
-    width: 70px;
-    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid rgb(110, 110, 203);
+    color: white;
+    height: 33px;
+    width: 60px;
+    border-radius: 10px;
     padding: 4px;
-}
-
-.grid-box > input[placeholder] {
-    text-align: center;
-}
-
-.btn > input {
-    margin-right: 10px;
     transition: 0.3s;
 }
 
-.btn > #btn-reset:hover {
+.grid-box > #grid-btn:hover {
     cursor: pointer;
-    background-color: rgb(103, 29, 29);
+    border: none;
+    background-color: rgb(202, 129, 129);
 }
 
 #btn-reset {
     width: 60px;
     height: 33px;
-    background-color: rgb(131, 55, 55);
+    background-color: transparent;
+    border: 1px solid rgb(110, 110, 203);
     color: white;
-    border: none;
     border-radius: 10px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.btn-reset > #btn-reset:hover {
+    cursor: pointer;
+    border: none;
+    background-color: rgb(202, 129, 129);
 }
